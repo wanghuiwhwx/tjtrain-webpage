@@ -92,3 +92,17 @@ img {
 .time {
   text-align: right;
 }
+.row-box {
+  padding: 0 5px;
+}
+.row-box .left{
+  float: left;
+}
+.row-box .right {
+  float: right;
+}
+.eay {
+  display: inline-block;
+  width: 15px;
+  vertical-align: 1px;
+}

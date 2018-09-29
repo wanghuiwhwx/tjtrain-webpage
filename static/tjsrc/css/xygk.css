@@ -28,6 +28,8 @@ img {
 .center .title {
   border-bottom: 2px solid #94cbe7;
   padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
 }
 .center .title span {
   border-bottom: 5px solid #2e66bd;
@@ -37,7 +39,8 @@ img {
   border: 1px solid #dddddd;
 }
 .xygk-bottom p {
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bold;
   height: 52px;
   line-height: 52px;
   padding-left: 15px;

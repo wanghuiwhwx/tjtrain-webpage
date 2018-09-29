@@ -1,4 +1,4 @@
-.container {
+.container-fluid {
   margin: 0;
   padding: 0;
 }
@@ -71,7 +71,7 @@
   
 }
 .search-box {
-  width: 40%;
+  width: 60%;
   margin: 0 auto;
 }
 .input-group-addon:last-child {
@@ -79,4 +79,18 @@
   color: #fff;
   padding: 10px 45px;
   cursor: pointer;
+}
+.row-box {
+  padding: 0 5px;
+}
+.row-box .left{
+  float: left;
+}
+.row-box .right {
+  float: right;
+}
+.eay {
+  display: inline-block;
+  width: 15px;
+  vertical-align: 1px;
 }

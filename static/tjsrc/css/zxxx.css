@@ -64,6 +64,9 @@
   cursor: pointer;
   height: 39px;
 }
+.tag-box li:last-of-type {
+  margin-right: 0;
+}
 .tag-box li.on {
   font-weight: bold;
   border-bottom: 3px solid #2e66bd;

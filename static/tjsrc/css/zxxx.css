@@ -63,6 +63,7 @@
   margin-right: 50px;
   cursor: pointer;
   height: 39px;
+  font-size: 16px;
 }
 .tag-box li:last-of-type {
   margin-right: 0;
@@ -88,9 +89,11 @@
 }
 .row-box .left{
   float: left;
+  margin-left: 10px;
 }
 .row-box .right {
   float: right;
+  margin-right: 10px;
 }
 .eay {
   display: inline-block;

@@ -1,4 +1,8 @@
 {
-  returnType:"00",
-  data:{ts_kj:23, ts_mnsc:22, q_sj:31}
+  "returnType": "00",
+  "data": {
+    "ts_kj": 23,
+    "ts_mnsc": 22,
+    "q_sj": 31
+  }
 }

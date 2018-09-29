@@ -38,9 +38,13 @@
   font-size: 20px;
 }
 .listbox p {
-  text-align: center;
+  text-align: left;
   height: 26px;
   line-height: 26px;
+  padding: 0 10px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap
 }
 .tag-box {
   height: 40px;
@@ -53,6 +57,7 @@
   margin-right: 50px;
   cursor: pointer;
   height: 39px;
+  font-size: 16px;
 }
 .tag-box li.on {
   font-weight: bold;

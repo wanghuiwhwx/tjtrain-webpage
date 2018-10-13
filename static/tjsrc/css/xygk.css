@@ -104,14 +104,17 @@ img {
 }
 .row-box .left{
   float: left;
+  padding-left: 10px;
 }
 .row-box .right {
   float: right;
+  padding-right: 10px;
 }
 .eay {
   display: inline-block;
   width: 15px;
   vertical-align: 1px;
+  margin-right: 10px;
 }
 .pic {
   height: 215px;

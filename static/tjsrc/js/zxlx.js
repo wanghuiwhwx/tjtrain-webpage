@@ -25,7 +25,7 @@ $(function (param) {
     var ny_bottom = $( "#slider-range" ).slider( "values", 0 ) //易程度value值
     var ny_top = $( "#slider-range" ).slider( "values", 1 ) //难程度value值
     var num = $(".nums").val()  //  题目数量vaule值
-    console.log(ny_bottom,ny_top)
+    console.log(type)
     $.ajax({
       type: "get",
       url: "../../demoJson/json143.json",

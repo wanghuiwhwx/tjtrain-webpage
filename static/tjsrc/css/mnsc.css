@@ -9,10 +9,18 @@
 .listbox {
   padding-top: 20px;
 }
+.listbox::after {
+  content:"";
+  display: block;
+  clear: both;
+}
 .listbox li {
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 20px;
+  float: left;
+  width: 300px;
+  margin-left: 15px;
 }
 .btns {
   width: 80%;

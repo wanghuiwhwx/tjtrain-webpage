@@ -1,6 +1,7 @@
 .container-fluid {
   margin: 0;
   padding: 0;
+  
 }
 .con{
   border-radius: 10px;
@@ -8,6 +9,8 @@
 }
 .listbox {
   padding-top: 20px;
+  width: 1200px;
+  margin: 0 auto;
 }
 .listbox::after {
   content:"";
@@ -19,8 +22,8 @@
   overflow: hidden;
   margin-bottom: 20px;
   float: left;
-  width: 300px;
-  margin-left: 15px;
+  width: 260px;
+  margin-left: 31px;
 }
 .btns {
   width: 80%;

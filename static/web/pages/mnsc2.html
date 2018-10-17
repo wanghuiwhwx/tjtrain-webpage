@@ -15,7 +15,7 @@
   <script src="../../libs/jquery/jquery-1.12.4.js"></script>
   <script src="../../libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body style="overflow: auto;">
   <div class="box container-fluid">
     <div class="tlkc bgs">
       <span>在线练习</span>
@@ -35,7 +35,10 @@
       <span>操作步骤</span>
     </div>
     <div class="czbz bgs">
+        <span class="left-btn" aria-hidden="true"><i class="glyphicon glyphicon-menu-left"></i></span>
+        <span class="right-btn" aria-hidden="true"><i class="glyphicon glyphicon-menu-right"></i></span>
       <div class="list">
+        
         <ul>
           <!-- <li>
             <div class="index"><p>1</p></div>
@@ -93,9 +96,34 @@
             +'<span class="sanjiao"><img src="../../tjsrc/images/sanjiao.jpg"></span>'
           +'</li>'
         }   
-        $(".list ul").html(html)    
+        $(".list ul").html(html)
+        if(res.data.list.length <= 6) {
+          $(".left-btn,.right-btn").css("display","none")
+        }else {
+          $(".left-btn,.right-btn").css("display","block")
+        }
       }
     }
   });
+  var index = 0;
+  $(".czbz").on("click",".left-btn",function (param) {
+    if(index <= 0) {
+      index = 0
+    }else {
+      index -= 1
+      var step = index * 17
+      
+      $(".czbz ul").animate({"left":"-"+step+"%"})
+    }
+   })
+   $(".czbz").on("click",".right-btn",function (param) { 
+    if(index >= $(".czbz").find("li").length-6 ) {
+      
+    }else {
+      index+=1
+      var step = index * 17
+      $(".czbz ul").animate({"left":"-"+step+"%"})
+    }
+   })
 </script>
 </html>

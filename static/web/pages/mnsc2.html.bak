@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../libs/bootstrap-3.3.7-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../../tjsrc/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+  <link rel="stylesheet" href="../../tjsrc/css/rest.css">
+  <!-- <link rel="stylesheet" href="../../tjsrc/css/sider.css"> -->
+  <link rel="stylesheet" href="../../tjsrc/css/mnsc2.css">
+
+  <script src="../../libs/jquery/jquery-1.12.4.js"></script>
+  <script src="../../libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</head>
+<body style="overflow: auto;">
+  <div class="box container-fluid">
+    <div class="tlkc bgs">
+      <span>在线练习</span>
+    </div>
+    <div class="mnsc-box row bgs">
+      <div class="pic col-sm-3">
+        <img src="../../tjsrc/images/mnsc_default.jpg">
+      </div>
+      <div class="info col-sm-9">
+        <h2>价格管理 收费项目管理</h2>
+        <p class="stae"><span class="eay"><img src="../../tjsrc/images/rs.jpg"></span><span class="num">2.5万</span><span class="time">发布时间: 2018-09-27</span></p>
+        <p class="jj">企业项目设置</p>
+        <div class="ks-btn">开始学习</div>
+      </div>
+    </div>
+    <div class="tlkc bgs" style="margin-top:20px;">
+      <span>操作步骤</span>
+    </div>
+    <div class="czbz bgs">
+        <span class="left-btn" aria-hidden="true"><i class="glyphicon glyphicon-menu-left"></i></span>
+        <span class="right-btn" aria-hidden="true"><i class="glyphicon glyphicon-menu-right"></i></span>
+      <div class="list">
+        
+        <ul>
+          <!-- <li>
+            <div class="index"><p>1</p></div>
+            <h2>登陆进入企业中心</h2>
+            <div class="txt">
+              用户进入服务平台后，首页进行登陆，通过用户名，密码方式进行登陆，登陆后进入企业中心，用户在企业中心进行操作。
+            </div>
+            <span class="sanjiao"><img src="../../tjsrc/images/sanjiao.jpg"></span>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+    <div class="tlkc bgs" style="margin-top:20px;">
+      <span>相关课程</span>
+    </div>
+    <div class="xgkc-box bgs">
+      <ul>
+        <li>
+          <div class="tpic">
+            <img src="../../tjsrc/images/111.jpg">
+          </div>
+          <div class="infos">价格管理-收费项目</div>
+        </li>
+        <li>
+          <div class="tpic">
+            <img src="../../tjsrc/images/111.jpg">
+          </div>
+          <div class="infos">价格管理-收费项目</div>
+        </li>
+        <li>
+          <div class="tpic">
+            <img src="../../tjsrc/images/111.jpg">
+          </div>
+          <div class="infos">价格管理-收费项目</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+<script>
+var res=new Object();
+res.data={};
+res.data.list=[
+      {
+        "title": "登陆进入企业中心",
+        "txt": "用户进入服务平台后，首页进行登陆，通过用户名，密码方式进行登陆，登陆后进入企业中心，用户在企业中心进行操作。"
+      },
+      {
+        "title": "登陆进入企业中心2",
+        "txt": "用户进入服务平台后，首页进行登陆，通过用户名，密码方式进行登陆，登陆后进入企业中心，用户在企业中心进行操作。"
+      },
+      {
+        "title": "登陆进入企业中心3",
+        "txt": "用户进入服务平台后，首页进行登陆，通过用户名，密码方式进行登陆，登陆后进入企业中心，用户在企业中心进行操作。"
+      },
+      {
+        "title": "登陆进入企业中心4",
+        "txt": "用户进入服务平台后，首页进行登陆，通过用户名，密码方式进行登陆，登陆后进入企业中心，用户在企业中心进行操作。"
+      },
+      {
+        "title": "登陆进入企业中心5",
+        "txt": "用户进入服务平台后，首页进行登陆，通过用户名，密码方式进行登陆，登陆后进入企业中心，用户在企业中心进行操作。"
+      },
+      {
+        "title": "登陆进入企业中心6",
+        "txt": "用户进入服务平台后，首页进行登陆，通过用户名，密码方式进行登陆，登陆后进入企业中心，用户在企业中心进行操作。"
+      }/*,
+      {
+        "title": "登陆进入企业中心7",
+        "txt": "用户进入服务平台后，首页进行登陆，通过用户名，密码方式进行登陆，登陆后进入企业中心，用户在企业中心进行操作。"
+      },
+      {
+        "title": "登陆进入企业中心8",
+        "txt": "用户进入服务平台后，首页进行登陆，通过用户名，密码方式进行登陆，登陆后进入企业中心，用户在企业中心进行操作。"
+      }*/
+];
+
+  var html = ""
+  for(var i=0;i<res.data.list.length;i++) {
+    html+='<li>'
+      +'<div class="index"><p>'+(i+1)+'</p></div>'
+      +'<h2>'+res.data.list[i].title+'</h2>'
+      +'<div class="txt">'+res.data.list[i].txt+'</div>'
+      +'<span class="sanjiao"><img src="../../tjsrc/images/sanjiao.jpg"></span>'
+    +'</li>'
+  }   
+  $(".list ul").html(html)
+  if(res.data.list.length <= 6) {
+    $(".left-btn,.right-btn").css("display","none")
+  }else {
+    $(".left-btn,.right-btn").css("display","block")
+  }
+
+  var index = 0;
+  $(".czbz").on("click",".left-btn",function (param) {
+    if(index <= 0) {
+      index = 0
+    }else {
+      index -= 1
+      var step = index * 17
+      
+      $(".czbz ul").animate({"left":"-"+step+"%"})
+    }
+   })
+   $(".czbz").on("click",".right-btn",function (param) { 
+    if(index >= $(".czbz").find("li").length-6 ) {
+      
+    }else {
+      index+=1
+      var step = index * 17
+      $(".czbz ul").animate({"left":"-"+step+"%"})
+    }
+   })
+</script>
+</html>

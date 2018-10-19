@@ -1,5 +1,6 @@
 html,body{
-  height: 1022px;
+    height: 660px;
+  background:#ffffff;
 }
 .page-form-list{
   width: 610px;
@@ -35,6 +36,7 @@ html,body{
 }
 .triangle{
   margin-right: 22px;
+  height:300px;
 }
 .triangle img{
   margin-top: 160px;

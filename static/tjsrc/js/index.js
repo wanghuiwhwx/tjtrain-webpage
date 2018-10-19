@@ -15,6 +15,7 @@ $(function () {
                 name: '模拟实操分类',
                 type: 'pie',
                 radius: ['50%', '70%'],
+                center: ['50%','60%'],
                 avoidLabelOverlap: false,
                 label: {
                     normal: {
@@ -115,8 +116,8 @@ $(function () {
             data:['模拟实操','课件']
         },
         grid: {
-            left: '3%',
-            right: '4%',
+            left: '1%',
+            right: '5%',
             bottom: '3%',
             containLabel: true
         },
@@ -128,20 +129,50 @@ $(function () {
         xAxis: {
             type: 'category',
             boundaryGap: false,
-            data: ["法规类","政策类","收费类","放行类","理货类","出口类","进口类"]
+            data: ["2018-1","2018-2","2018-3","2018-4","2018-5","2018-6","2018-7"]
         },
         yAxis: {
             type: 'value'
         },
         series: [
             {
-                name:'模拟实操',
+                name:'法规类',
                 type:'line',
                 stack: '总量',
                 data:[120, 132, 101, 134, 90, 230, 210]
             },
             {
-                name:'课件',
+                name:'政策类',
+                type:'line',
+                stack: '总量',
+                data:[220, 182, 191, 234, 290, 330, 310]
+            },
+            {
+                name:'收费类',
+                type:'line',
+                stack: '总量',
+                data:[220, 182, 191, 234, 290, 330, 310]
+            },
+            {
+                name:'放行类',
+                type:'line',
+                stack: '总量',
+                data:[220, 182, 191, 234, 290, 330, 310]
+            },
+            {
+                name:'理货类',
+                type:'line',
+                stack: '总量',
+                data:[220, 182, 191, 234, 290, 330, 310]
+            },
+            {
+                name:'出口类',
+                type:'line',
+                stack: '总量',
+                data:[220, 182, 191, 234, 290, 330, 310]
+            },
+            {
+                name:'进口类',
                 type:'line',
                 stack: '总量',
                 data:[220, 182, 191, 234, 290, 330, 310]
@@ -157,4 +188,68 @@ $(function () {
         myChart2.resize();
         myChart3.resize();
     }
+    $(".tabs input").on("input",function (param) { 
+        var val = $(this).val()
+        if(val == "fl") {
+            console.log(option3)
+            option3.series = [
+                {
+                    name:'法规类',
+                    type:'line',
+                    stack: '总量',
+                    data:[120, 132, 101, 134, 90, 230, 210]
+                },
+                {
+                    name:'政策类',
+                    type:'line',
+                    stack: '总量',
+                    data:[220, 182, 191, 234, 290, 330, 310]
+                },
+                {
+                    name:'收费类',
+                    type:'line',
+                    stack: '总量',
+                    data:[220, 182, 191, 234, 290, 330, 310]
+                },
+                {
+                    name:'放行类',
+                    type:'line',
+                    stack: '总量',
+                    data:[220, 182, 191, 234, 290, 330, 310]
+                },
+                {
+                    name:'理货类',
+                    type:'line',
+                    stack: '总量',
+                    data:[220, 182, 191, 234, 290, 330, 310]
+                },
+                {
+                    name:'出口类',
+                    type:'line',
+                    stack: '总量',
+                    data:[220, 182, 191, 234, 290, 330, 310]
+                },
+                {
+                    name:'进口类',
+                    type:'line',
+                    stack: '总量',
+                    data:[220, 182, 191, 234, 290, 330, 310]
+                }
+            ]
+            myChart3.setOption(option3,true);
+            //myChart3.resize();
+        }else {
+            option3.series = [
+                {
+                    name:'总数',
+                    type:'line',
+                    stack: '总量',
+                    data:[220, 182, 191, 234, 290, 330, 310]
+                }
+            ]
+            //myChart3.resize();
+            myChart3.setOption(option3,true);
+            
+        }
+     })
  })

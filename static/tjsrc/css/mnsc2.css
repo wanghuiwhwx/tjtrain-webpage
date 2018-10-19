@@ -71,6 +71,7 @@ body {
   margin-top: 20px;
   padding: 20px 30px;
   position: relative;
+  
 }
 .index {
   width: 80px;
@@ -107,8 +108,7 @@ body {
   min-height: 200px;
 }
 .list {
-  overflow-x: no;
-  
+  overflow-x: hidden;
 }
 .list ul {
   display: -webkit-box;

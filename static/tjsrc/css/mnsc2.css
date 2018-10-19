@@ -107,7 +107,7 @@ body {
   min-height: 200px;
 }
 .list {
-  overflow-x: auto;
+  overflow-x: no;
   
 }
 .list ul {

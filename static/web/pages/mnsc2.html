@@ -79,32 +79,59 @@
   </div>
 </body>
 <script>
-  $.ajax({
-    type: "get",
-    url: "json_czbj.json",
-    data: "",
-    dataType: "json",
-    success: function (res) {
-      console.log(res)
-      if(res.returnCode == 00) {
-        var html = ""
-        for(var i=0;i<res.data.list.length;i++) {
-          html+='<li>'
-            +'<div class="index"><p>'+(i+1)+'</p></div>'
-            +'<h2>'+res.data.list[i].title+'</h2>'
-            +'<div class="txt">'+res.data.list[i].txt+'</div>'
-            +'<span class="sanjiao"><img src="../../tjsrc/images/sanjiao.jpg"></span>'
-          +'</li>'
-        }   
-        $(".list ul").html(html)
-        if(res.data.list.length <= 6) {
-          $(".left-btn,.right-btn").css("display","none")
-        }else {
-          $(".left-btn,.right-btn").css("display","block")
-        }
-      }
-    }
-  });
+var res=new Object();
+res.data={};
+res.data.list=[
+      {
+        "title": "登陆进入企业中心",
+        "txt": "用户进入服务平台后，首页进行登陆，通过用户名，密码方式进行登陆，登陆后进入企业中心，用户在企业中心进行操作。"
+      },
+      {
+        "title": "登陆进入企业中心2",
+        "txt": "用户进入服务平台后，首页进行登陆，通过用户名，密码方式进行登陆，登陆后进入企业中心，用户在企业中心进行操作。"
+      },
+      {
+        "title": "登陆进入企业中心3",
+        "txt": "用户进入服务平台后，首页进行登陆，通过用户名，密码方式进行登陆，登陆后进入企业中心，用户在企业中心进行操作。"
+      },
+      {
+        "title": "登陆进入企业中心4",
+        "txt": "用户进入服务平台后，首页进行登陆，通过用户名，密码方式进行登陆，登陆后进入企业中心，用户在企业中心进行操作。"
+      },
+      {
+        "title": "登陆进入企业中心5",
+        "txt": "用户进入服务平台后，首页进行登陆，通过用户名，密码方式进行登陆，登陆后进入企业中心，用户在企业中心进行操作。"
+      },
+      {
+        "title": "登陆进入企业中心6",
+        "txt": "用户进入服务平台后，首页进行登陆，通过用户名，密码方式进行登陆，登陆后进入企业中心，用户在企业中心进行操作。"
+      },
+      {
+        "title": "登陆进入企业中心7",
+        "txt": "用户进入服务平台后，首页进行登陆，通过用户名，密码方式进行登陆，登陆后进入企业中心，用户在企业中心进行操作。"
+      },
+      {
+        "title": "登陆进入企业中心8",
+        "txt": "用户进入服务平台后，首页进行登陆，通过用户名，密码方式进行登陆，登陆后进入企业中心，用户在企业中心进行操作。"
+      }/**/
+];
+
+  var html = ""
+  for(var i=0;i<res.data.list.length;i++) {
+    html+='<li>'
+      +'<div class="index"><p>'+(i+1)+'</p></div>'
+      +'<h2>'+res.data.list[i].title+'</h2>'
+      +'<div class="txt">'+res.data.list[i].txt+'</div>'
+      +'<span class="sanjiao"><img src="../../tjsrc/images/sanjiao.jpg"></span>'
+    +'</li>'
+  }   
+  $(".list ul").html(html)
+  if(res.data.list.length <= 6) {
+    $(".left-btn,.right-btn").css("display","none")
+  }else {
+    $(".left-btn,.right-btn").css("display","block")
+  }
+
   var index = 0;
   $(".czbz").on("click",".left-btn",function (param) {
     if(index <= 0) {

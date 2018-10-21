@@ -494,3 +494,6 @@ background-image: url(../image/last.png)
 #inrto-nav  .pro li.intro-used span{
     color: #cbccce;
 }
+#inrto-nav li {
+  cursor: pointer;
+}

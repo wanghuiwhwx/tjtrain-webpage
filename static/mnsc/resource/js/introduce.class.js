@@ -90,12 +90,18 @@
     IntroduceControl.prototype.nextPage = function () {
         IntroduceTipsCurrent ++
         IntroduceTipsStep = -1
+        console.log(IntroduceTipsCurrent)
         IntroduceTipsListNext()
     }
     IntroduceControl.prototype.prevPage = function () {
         IntroduceTipsCurrent --
         IntroduceTipsStep = -1
         IntroduceTipsListNext()
+    }
+    IntroduceControl.prototype.restPage = function (index) {
+      IntroduceTipsCurrent = index
+      IntroduceTipsStep = -1
+      IntroduceTipsListNext()
     }
     IntroduceControl.prototype.rePage = function () {
         IntroduceTipsStep = -1

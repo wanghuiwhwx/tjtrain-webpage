@@ -23,7 +23,7 @@
       <div class="banxin header">
         <div class="fl header-logo">
           <img src="../resource/image/LOGO@2x.png" alt="" class="logo">
-          <span class="header-name">天津市港口统一收费服务平台 线上培训子系统</span>
+          <span class="header-name">天津市港口统一收费服务平台</span>
         </div>
       </div>
     </div>
@@ -33,30 +33,27 @@
     </div>
   </div>
   <div class="page-container">
-  <div class="pro_nav">
-    <div id="inrto-nav"></div>
-  </div>
+  	<div class="pro_nav">
+      <div id="inrto-nav"></div>
+	  </div>
     <!--主体-->
     <div class="page-main">
-      <div class="head_title"><span id="msg"><B>模拟实操具体操作区</B></span></div>               
-      <div class="content_border" >
-        <div class="page-form-list"  id="page-form-list">
-          <iframe src="" frameborder="0" id="tipsMain" ></iframe>
+            <div class="head_title"><span id="msg"><B>模拟实操具体操作区</B></span></div>               
+            <div class="content_border" >
+              <div class="page-form-list"  id="page-form-list">
+                  <iframe src="" frameborder="0" id="tipsMain" ></iframe>
+              </div>
+            </div>
+          	<div class="pay_button">
+                <span class="previousPage" onclick="prevPage()">上一步</span>
+                <span class="repractice" onclick="rePage()">重新练习</span>
+                <span class="nextPage" onclick="nextPage()">下一步</span>
+            </div>
         </div>
-      </div>
-      <div class="pay_button">
-        <span class="previousPage" onclick="prevPage()">上一步</span>
-        <span class="repractice" onclick="rePage()">重新练习</span>
-        <span class="nextPage" onclick="nextPage()">下一步</span>
-      </div>
     </div>
-  </div>
 </div>
-
 <div class="pt-footer">
-  <!--
   <div class="pt-p">版权归属 @ 天津市港口统一管理中心 CopyRight 2018 技术支持电话：400-888-5678</div>
-  -->
 </div>
 <script>
     $(function(){
@@ -82,7 +79,7 @@
                 {
                     srcUrl: './stepTips1.html',
                     steps:[
-  {
+					  {
                             X: 600,
                             Y: 460,
                             distance: 10,
@@ -98,35 +95,35 @@
                                 backgroundColor: '#990000'
                             },
                             callBack: function (obj) {     
-     console.log(obj);                       
-                            }
-},
- {
+							     console.log(obj);                       
+                            }	
+						},						
+						 {
                             X: 610,
                             Y: 420,
                             distance: 10,
                             direction: 'bottom',
-noTriangle: true,
+							noTriangle: true,
                             borderColor: 'red',
                             content: '',
                             padding: 10,
                            // backgroundColor: 'rgba(0,0,0,0.6)',//背景颜色
-backgroundColor: 'transparent', //透明颜色
+							backgroundColor: 'transparent', //透明颜色
                             color: '#fff',
                             radius: 5,
                             area: [100,50],
                             nextBtn: {
                                 content: '登录',
                                 backgroundColor: '#000000',
-callBack: function (obj) {
+								callBack: function (obj) {
                                     nextPage();
                                 }
                             },
                             callBack: function (obj) {
-                                 console.log(obj);
-                            }
-}
-]
+                           	      console.log(obj);
+                            }	
+						}		
+					]
                 },
                 {
                     srcUrl: './stepTips2.html',
@@ -169,30 +166,30 @@ callBack: function (obj) {
                                 console.log(obj);
                             }
                         },
- {
+						 {
                             X: 260,
                             Y: 166,
                             distance: 10,
                             direction: 'bottom',
-noTriangle: true,
+							noTriangle: true,
                             borderColor: 'red',
                             content: '',
                             padding: 10,
                            // backgroundColor: 'rgba(0,0,0,0.6)',//背景颜色
-backgroundColor: 'transparent', //透明颜色
+							backgroundColor: 'transparent', //透明颜色
                             color: '#fff',
                             radius: 5,
                             area: [100,50],
                             nextBtn: {
                                 content: '新增',
                                 backgroundColor: '#000000',
-callBack: function (obj) {
-                                nextPage(); }
+								callBack: function (obj) {
+                                nextPage(); }	
                             },
                             callBack: function (obj) {
-                                 console.log(obj);
-                            }
-},
+                           	      console.log(obj);
+                            }	
+						},	
                     ]
                 },
                 {
@@ -241,25 +238,25 @@ callBack: function (obj) {
                           Y: 280,
                           distance: 10,
                           direction: 'bottom',
-noTriangle: true,
+						noTriangle: true,
                           borderColor: 'red',
                           content: '',
                           padding: 10,
                          // backgroundColor: 'rgba(0,0,0,0.6)',//背景颜色
-backgroundColor: 'transparent', //透明颜色
+						backgroundColor: 'transparent', //透明颜色
                           color: '#fff',
                           radius: 5,
                           area: [100,50],
                           nextBtn: {
                               content: '保存',
                               backgroundColor: '#000000',
-callBack: function (obj) {
-                              nextPage(); }
+							callBack: function (obj) {
+                              nextPage(); }	
                           },
                           callBack: function (obj) {
-                               console.log(obj);
-                          }
-}
+                         	      console.log(obj);
+                          }	
+					}
                     ]
                 },
                 {
@@ -304,35 +301,34 @@ callBack: function (obj) {
                                 console.log(obj);
                             }
                         },
-                    {
-                      X: 1040,
-                      Y: 360,
-                      distance: 10,
-                      direction: 'bottom',
-noTriangle: true,
-                      borderColor: 'red',
-                      content: '',
-                      padding: 10,
-                     // backgroundColor: 'rgba(0,0,0,0.6)',//背景颜色
-backgroundColor: 'transparent', //透明颜色
-                      color: '#fff',
-                      radius: 5,
-                      area: [100,50],
-                      nextBtn: {
-                          content: '启用',
-                          backgroundColor: '#000000',
-callBack: function (obj) {
-                          nextPage(); }
-                      },
-                      callBack: function (obj) {
-                           console.log(obj);
-                      }
-}
+		                    {
+		                      X: 1040,
+		                      Y: 360,
+		                      distance: 10,
+		                      direction: 'bottom',
+						noTriangle: true,
+		                      borderColor: 'red',
+		                      content: '',
+		                      padding: 10,
+		                     // backgroundColor: 'rgba(0,0,0,0.6)',//背景颜色
+						backgroundColor: 'transparent', //透明颜色
+		                      color: '#fff',
+		                      radius: 5,
+		                      area: [100,50],
+		                      nextBtn: {
+		                          content: '启用',
+		                          backgroundColor: '#000000',
+							callBack: function (obj) {
+		                          nextPage(); }	
+		                      },
+		                      callBack: function (obj) {
+		                     	      console.log(obj);
+		                      }	
+					}
                     ]
                 },
                 {
-                  //srcUrl: './stepTips5.html',
-                  srcUrl: './step6.html',
+                  srcUrl: './stepTips5.html',
                   steps:[
                     
                     {
@@ -359,30 +355,29 @@ callBack: function (obj) {
                     Y: 290,
                     distance: 10,
                     direction: 'bottom',
-noTriangle: true,
+			noTriangle: true,
                     borderColor: 'red',
                     content: '',
                     padding: 10,
                    // backgroundColor: 'rgba(0,0,0,0.6)',//背景颜色
-backgroundColor: 'transparent', //透明颜色
+			backgroundColor: 'transparent', //透明颜色
                     color: '#fff',
                     radius: 5,
                     area: [100,50],
                     nextBtn: {
                         content: '确定',
                         backgroundColor: '#000000',
-callBack: function (obj) {
-                        nextPage(); }
+				callBack: function (obj) {
+                        nextPage(); }	
                     },
                     callBack: function (obj) {
-                         console.log(obj);
-                    }
-}
+                   	      console.log(obj);
+                    }	
+		}
                   ]
               },
               {
-                //srcUrl: './stepTips6.html',
-                srcUrl: './step6.html',
+                srcUrl: './stepTips6.html',
                 steps:[
                   
                     {

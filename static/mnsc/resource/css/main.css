@@ -60,7 +60,7 @@ input, select, textarea {
   display: inline-block;
   width: 140px;
   height: 35px;
-  border-radius: 20px;
+  border-radius: 5px;
   font-size: 16px;
   line-height: 35px;
   text-align: center;

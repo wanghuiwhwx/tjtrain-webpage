@@ -58,6 +58,15 @@
         IntroduceTipsListNext()
     }
     function IntroduceTipsListNext () {
+        var iframe = document.getElementById('tipsMain')
+        iframe.onload = function() {
+            //解决打开高度太高的页面后再打开高度较小页面滚动条不收缩
+            iframe.height = "auto"
+            var ifrheight =  iframe.contentWindow.document.documentElement.scrollHeight || iframe.contentDocument.body.scrollHeight
+
+            iframe.height = ifrheight
+            console.log(ifrheight)
+        }
         if (!IntroduceTipsArr[IntroduceTipsCurrent]){
             new IntroduceControl().cleanOld()
             return

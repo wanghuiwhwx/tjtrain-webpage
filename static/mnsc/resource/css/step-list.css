@@ -1,9 +1,7 @@
 html,body{
 	
-  height: 1125px;
 }
 .page-main{
-  height: 840px;
   padding-top: 30px;
 }
 .page-form-list{
@@ -56,6 +54,7 @@ html,body{
 
 .pay_button{
   margin-top: 35px;
+  padding-bottom: 50px;
 }
 
 /*�߿�����������ʽ*/

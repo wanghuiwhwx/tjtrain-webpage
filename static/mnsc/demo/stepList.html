@@ -431,7 +431,7 @@
   iframe.onload = function() {
   	  //解决打开高度太高的页面后再打开高度较小页面滚动条不收缩
       var ifrheight =  iframe.contentWindow.document.documentElement.scrollHeight || iframe.contentDocument.body.scrollHeight
-      iframe.height = ifrheight
+      iframe.height = ifrheight + 20
       console.log(ifrheight)
   }
   </script>

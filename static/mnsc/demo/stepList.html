@@ -56,11 +56,17 @@
   </div>
 
   <div class="pt-footer">
-    <!--
+  <!--
   <div class="pt-p">版权归属 @ 天津市港口统一管理中心 CopyRight 2018 技术支持电话：400-888-5678</div>
   -->
   </div>
   <script>
+  //修改iframe的高度
+  function changeIframHeight(iHeight) {
+    var h=parseInt(iHeight);
+    $(".content_border").css("height", (h+10)+"px");
+    $("#tipsMai").css("height", iHeight);
+  }
     $(function () {
       new IntroduceTipsList({
         el: '#page-form-list',
@@ -424,7 +430,8 @@
       console.log($(this).index())
       var index = $(this).index()
       new IntroduceControl().restPage(index)
-    })
+    });
+    //changeIframHeight("300px");
   </script>
 </body>
 
